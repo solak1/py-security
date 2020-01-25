@@ -11,7 +11,7 @@ import code_user
 # --login to account list-
 # /mousehunt/login.py ->
 
-def open_csv(file_name):
+def open_csv(file_name:str):
     '''Opens csv at file name and prints by row
     '''
     file_name = file_name + '.csv'
@@ -56,9 +56,9 @@ def new_encoded_csv(file_name:str, acc_list:list):
     with open(f'{file_name}.csv', mode='w') as account_file:
         new_row = csv.writer(account_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         encoded_accs = code_user.encode_accounts(acc_list, key)
-        print(f'Encoded prior to adding to csv: {encoded_accs}\n{len(encoded_accs)}')
+        # print(f'Encoded prior to adding to csv: {encoded_accs}\n{len(encoded_accs)}')
         for acc in encoded_accs:
-                print(acc)
+                # print(acc)
                 new_row.writerow(acc)
 
 if __name__ == '__main__':

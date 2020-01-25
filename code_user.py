@@ -29,7 +29,7 @@ def encode_account(acc_list: list, key: bytes):
 
 def encode_accounts(accs_list: list, key: bytes):
     for list in accs_list:
-        print(list)
+        #print(list)
         list = encode_account(list, key)
     return accs_list
 

@@ -52,7 +52,7 @@ def setup_accs_list(file_name):
             account.append(new_pwd)
             list_of_accounts.append(account)
             count += 1
-        print(list_of_accounts)
+        #print(list_of_accounts)
         return list_of_accounts
     except ValueError:
         setup_accs_list(file_name)   
@@ -67,8 +67,8 @@ def encrypt_new_ui():
     else:
         accounts_list = setup_accs_list(file_name)
         manage_csv.new_encoded_csv(file_name, accounts_list)
-        manage_csv.open_csv(file_name)
-        print("done.")
+        # manage_csv.open_csv(file_name)
+        print("Done.\n")
         # include path to file name
 
 
@@ -100,9 +100,9 @@ def encrypt_ui():
     else:
         key = key_from_pass.main()
         acc_list = manage_csv.csv_data_to_list(file_name)
-        print(acc_list)
+        # print(acc_list)
         accounts = code_user.encode_accounts(acc_list, key)
-        print(accounts)
+        # print(accounts)
         return accounts
         # include path to file name
         # accounts_list = setup_accs_list(file_name)
@@ -110,7 +110,7 @@ def encrypt_ui():
 
 
 def print_list(list_name: str):
-    manage_csv.open_csv('list_name')
+    manage_csv.open_csv(list_name)
 
 if __name__ == '__main__':
     simple_ui()
