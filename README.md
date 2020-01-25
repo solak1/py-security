@@ -2,6 +2,10 @@
 
 Py-Security provides AES 128-bit Encryption for user account details.
 
+# Why?
+
+If you are running a python program that logins into accounts.  Well, you can implement this python program to store your account details in a .csv file and then load your account details during run time.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
