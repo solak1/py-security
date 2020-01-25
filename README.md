@@ -28,7 +28,7 @@ What things you need:
 
 ## Authors
 
-* **Mike Solakn** - [Mike Solak](https://github.com/solak1)
+* **Mike Solak** - [Mike Solak](https://github.com/solak1)
 
 
 ## License
